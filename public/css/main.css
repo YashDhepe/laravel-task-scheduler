@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+body {
+    font-family: "Barlow", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.border-left {
+    border-left: 2px solid var(--primary) !important;
+}
+
+.sidebar {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.overlay {
+    background-color: rgb(0 0 0 / 45%);
+    z-index: 99;
+}
+
+.main-navbar {
+    position: fixed;
+    background: white;
+    z-index: 1;
+}
+
+table {
+    width: 100%;
+}
+
+#basic-datatable {
+    width: 100%;
+}
+
+td,
+th {
+    white-space: nowrap
+}
+
+.table {
+    width: 100% !important;
+}
+
+.dataTables_info {
+    float: right;
+}
+
+.paginate_button {
+    /* background: gray; */
+    /* color: white; */
+    padding: 0.2rem 1rem;
+    border: 0.1px solid grey;
+    cursor: pointer;
+}
+
+a.paginate_button.current {
+    background: gray;
+    color: white;
+}
+
+a.paginate_button.current:hover {
+    background: gray;
+    color: white;
+    text-decoration: none;
+
+}
+
+a.paginate_button.previous {
+    border-radius: 10px 1px 1px 10px;
+}
+
+a.paginate_button.next {
+    border-radius: 1px 10px 10px 1px;
+}
+
+.navbar {
+    margin: 1.5% 3.5% 0 3.5%;
+    box-shadow: 1px 2px 17px #80808082 !important;
+    background: white;
+}
+
+#sidebar {
+    box-shadow: 1px 2px 17px #80808082 !important;
+}
+
+.cm-container{
+    position: relative;
+}
+.addRecord {
+    position: absolute;
+    z-index: 1;
+    /* left: 2.9%;
+    top: 32%; */
+    left: 30px;
+    top: 25px;
+}
+
+a.paginate_button{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* SWEET ALERT CSS */
+.swal2-icon{
+    font-size: 1rem !important;
+}
+
+/* DATATABLE */
+.dataTables_filter {
+    float: right !important;
+}
+
+.vertical-nav-menu i.metismenu-state-icon,
+.vertical-nav-menu i.metismenu-icon {
+    font-size: 15px !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 1px; /* Set the width as per your preference */
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+  }
+
+  #taskuserdatatable-table_wrapper {
+    overflow: scroll hidden;
+  }
+
+  .dataTables_paginate{
+    margin-bottom: 1rem;
+  }
+
+
+/* sidebar for small screens */
+@media screen and (max-width: 767px) {
+    .sidebar {
+        max-width: 18rem;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-out;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+}
